@@ -7,7 +7,7 @@ ENV YQ_VERSION=v3.4.1
 WORKDIR /bootstrap
 COPY . /bootstrap
 RUN mkdir ~/.ssh
-COPY /bootstrap/ssh_config ~/.ssh/config
+COPY ssh_config ~/.ssh/config
 
 RUN set -eux; \
 apt-get update; \
