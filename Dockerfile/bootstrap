@@ -65,6 +65,6 @@ RUN set -eux; \
     apt-get clean; \
     rm -rf /var/lib/apt/lists/*
 
-COPY ./rootfs /
+#COPY ./rootfs /
 
 CMD [ "ansible-playbook", "--version" ]
